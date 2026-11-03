@@ -28,7 +28,7 @@ namespace MauiAppMinhasCompras.Helpers
         }
 
         public Task<int> Delete(int id) 
-        {                                              //todos os itens ONDE o id do item seja igual o id que eu dei
+        {                                           //todos os itens ONDE o id do item seja igual o id que eu dei
             return _conn.Table<Produto>().DeleteAsync(i => i.Id == id);
         }
 
