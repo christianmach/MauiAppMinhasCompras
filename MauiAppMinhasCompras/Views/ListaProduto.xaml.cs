@@ -20,6 +20,7 @@ public partial class ListaProduto : ContentPage
     {
 		try
 		{
+			lista.Clear();
 
 			//buscar a lista de produtos no sqlite
 			List<Produto> tmp = await App.Db.GetAll();
